@@ -38,6 +38,11 @@ label {
 }
 
 @font-face {
+    font-family: Helvetica;
+    src: url('../fonts/Helvetica.dfont');
+}
+
+@font-face {
     font-family: Quicksand;
     src: url('../fonts/Quicksand-Regular.otf');
 }
@@ -54,6 +59,9 @@ label {
 
 .DKCranyonCrumble {
     font-family: "DKCranyonCrumble", DKCranyonCrumble !important;
+}
+.Helvetica{
+    font-family: "Helvetica", Helvetica !important;
 }
 .learning {
     font-family: "LearningCurve", LearningCurve;
@@ -122,6 +130,7 @@ label {
 
 .landing_header {
     color: #000000;
+    margin-bottom:0%;
 }
 
 .landing_header_font {

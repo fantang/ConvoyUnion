@@ -2,7 +2,6 @@
 
 <?php
 session_start();
-
 if(!isset($_SESSION['username']) || !isset($_SESSION['password']))
 {
   header('Location: index.php');
@@ -21,67 +20,84 @@ if(!isset($_SESSION['username']) || !isset($_SESSION['password']))
   <link href="../public/css/styles.css" rel="stylesheet">
 </head>
 
-<body class="transparent index-background" style>
-<div class="row" align="right">
-  <form method="POST" action="index.php">
-    <input type="submit" value="Logout">
-  </form>
-</div>
+<body class="transparent index-background">
 
-<h1 class="landing_header_font DKCranyonCrumble" align="center" style="color:black;">
-	Great Fantang 
-</h1>
+  <div class="row" align="right">
+    <form method="POST" action="usercenter.php">
+      <input type="submit" value="Back">
+    </form>
+  </div>
+  
+  <div class="row">
+    <h1 class="landing_header_font DKCranyonCrumble" align="center" style="color:black;">
+     Great Fantang
+   </h1>
+ </div>
 
-<div class="row">
- <div class="col-xs-6 col-md-6">
-  <div class="thumbnail">
-    <a href="shangjia.php">
-      <img src="../public/images/shangjia.png">
-    </a>
-  </div>
- </div>
- <div class="col-xs-6 col-md-6">
-  <div class="thumbnail">
-    <a href="chongqian.html">
-      <img src="../public/images/chongqian.png">
-    </a>
-  </div>
- </div>
-</div>
 
-<div class="row">
- <div class="col-xs-6 col-md-6">
-  <div class="thumbnail">
-    <a href="jiaoyi.php">
-      <img src="../public/images/jiaoyi.png">
-    </a>
-  </div>
- </div>
- <div class="col-xs-6 col-md-6">
-  <div class="thumbnail">
-    <a href="lishi.html">
-      <img src="../public/images/lishi.png">
-    </a>
-  </div>
- </div>
-</div>
+ <div class="container shangjiaButtonPane" style="width:350px" align="center">
+ 	<div align="center">
+		<label style="font-size:17px;color:black;">
+			User Center
+		</label>
+	</div>
+     <div class="row shangjiaRow">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+       <div>
+        <a><img class="shangjiaRoundButton" src="../public/images/shangjia.png" style="width:100px;"></a>
+       </div>
+       <div>
+        <button class="btn btn-info shangjiaPrimaryButton" style="width:100px;">Merchants</button>
+       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+       <div>
+        <a><img class="shangjiaRoundButton" src="../public/images/chongqian.png" style="width:100px;"></a>
+       </div>
+       <div>
+        <button class="btn btn-info shangjiaPrimaryButton" style="width:100px;">Deposit</button>
+       </div>
+      </div>
+     </div>
+     
+     <div class="row shangjiaRow">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+       <div>
+        <a><img class=" shangjiaRoundButton" src="../public/images/jiaoyi.png" style="width:100px;"></a>
+       </div>
+       <div>
+        <button class="btn btn-info shangjiaPrimaryButton" style="width:100px;">Transaction</button>
+       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+       <div>
+        <a><img class=" shangjiaRoundButton" src="../public/images/lishi.png" style="width:100px;"></a>
+       </div>
+       <div>
+        <button class="btn btn-info shangjiaPrimaryButton" style="width:100px;">History</button>
+       </div>
+      </div>
+     </div>
 
-<div class="row">
- <div class="col-xs-6 col-md-6">
-  <div class="thumbnail">
-    <a href="guanyu.html">
-      <img src="../public/images/guanyu.png">
-    </a>
-  </div>
+     <div class="row shangjiaRow">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+       <div class="shangjiaLeftDiv">
+        <a><img class=" shangjiaRoundButton" src="../public/images/guanyu.png" style="width:100px;"></a>
+       </div>
+       <div>
+        <button class="btn btn-info shangjiaPrimaryButton" style="width:100px;">About Us</button>
+       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+       <div class="shangjiaRightDiv">
+        <a><img class=" shangjiaRoundButton" src="../public/images/wenti.png" style="width:100px;"></a>
+       </div>
+       <div>
+        <button class="btn btn-info shangjiaPrimaryButton" style="width:100px;">Questions</button>
+       </div>
+      </div>
+     </div><!-- item active tag -->
  </div>
- <div class="col-xs-6 col-md-6">
-  <div class="thumbnail">
-    <a href="wenti.html">
-      <img src="../public/images/wenti.png">
-    </a>
-  </div>
- </div>
-</div>
 </body>
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (blelow), or include individual files as needed -->

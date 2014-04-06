@@ -23,62 +23,58 @@ if(!isset($_SESSION['username']) || !isset($_SESSION['password']))
 <body class="transparent index-background">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-					<div class="jumbotron transparent landing_header">
-						<div>
-							<h1 class="landing_header_font DKCranyonCrumble" align="center">
-								Use Deductive
-							</h1>
-						</div>
-						<div class="container text-center">
-
-							<form>
-								<div>
-									<label style="color:black;" for="purchaseLocation">Merchant</label>
+			<div class="col-lg-4">
+				<div>
+          <div class="jumbotron transparent landing_header">
+           <div>
+            <h1 class="landing_header_font DKCranyonCrumble" align="center">
+             Great Fantang 
+           </h1>
+           </div>
+          </div>
+						<div class="container jiaoyiFormPane" style="width:300px">
+								<div align="center">
+									<label style="font-size:17px;color:black;">
+										Enter transaction information
+									</label>
 								</div>
-								<div>
-									<select>
-										<option value="volvo" font-size: 20px>Spicy City</option>
+							<form align="center">
+								<div align="center">
+									<input type="text" class="form-control" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" placeholder="User Name"></input>
+								</div>
+
+								<div align="center">
+									<input type="password" class="form-control" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" placeholder="Password"></input>
+								</div>
+								<br>
+								<div align="center">
+									<select align="center" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;"class="form-control">
+										<option value="lisi">Merchant Name</option>
+										<option value="volvo">Spicy City</option>
 										<option value="saab">Spicy House</option>
 										<option value="opel">Melody KTV</option>
 										<option value="audi">Spot KTV</option>
 									</select>
 								</div>
 
-								<div>
-									<label style="color:black;" for="purchaseAmount">Username</label>
-									<input type="text" class="form-control"></input>
-								</div>
-
-								<div>
-									<label style="color:black;" for="purchaseAmount">Password</label>
-									<input type="text" class="form-control"></input>
-								</div>
-
-								<div>
-									<label style="color:black;" for="customerSignture">Merchant Confirmation</label>
-								</div>
-
-								<div>
-									<select>
-										<option value="SELECT">SELECT</option>
+								<div align="center">
+									<select align="center" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" class="form-control">
+										<option value="SELECT">Merchant Confirmation</option>
 										<option value="YES">YES</option>
 										<option value="NO">NO</option>
 									</select>
 								</div>
-
-								<div>
-									<label style="color:black;" for="merchantSignature">Amount</label>
-									<input type="text" class="form-control"></input>
+								<br>
+								<div align="center">
+									<input type="text" class="form-control" style="width:250px;margin-bottom:4%;height:50px;background-color:#FFF8DC;" placeholder="Transaction Amount ($)"></input>
 								</div>
 
-								<div class="w-row">
-									<button  class="btn-lg btn-info green_sea_back">
-										<span class="glyphicon glyphicon-cutlery"></span>
-										<a href="main.html">Submit</a>
-									</button>
-								</div>
+        <div align="center">
+            <button style="color:black;font-size:18px;width:250px;height:50px;" class="btn-md btn-info green_sea_back" type="submit" name="signup-submit" value="Submit">
+             <span class="glyphicon glyphicon-log-in" style="color:white;"></span>
+             Submit
+            </button>
+          </div>
 							</form>
 
 						</div>

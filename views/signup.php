@@ -15,45 +15,57 @@ session_destroy();
   <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
   <link href="../public/css/styles.css" rel="stylesheet">
+  <link href="../public/css/fantang.css" rel="stylesheet">
   <title>Sign Up</title>
 </head>
-<body>
+<body class="transparent index-background">
+
   <div>
-    <form id="signup-form" role="form" name="email-form" method="POST" action="connect-signup.php">
-
-      <div class="w-container">
-        <h4 align="left">Full Name:</h1>
-        </div>
-        <input type="text" class="form-control" name="signup-name"></input>
-
-        <div class="w-container">
-          <h4 align="left">Email:</h1>
+    <div class="row">
+      <div class="col-lg-12">
+        <div>
+          <div class="jumbotron transparent landing_header">
+           <div>
+            <h1 class="landing_header_font DKCranyonCrumble" align="center">
+             Great Fantang
+           </h1>
+           </div>
           </div>
-          <input type="text" class="form-control" name="signup-email"></input>
-
-          <div class="w-container">
-            <h4 align="left">User Name:</h1>
-            </div>
-            <input type="text" class="form-control" name="signup-user"></input>
-
-            <div class="w-container">
-              <h4 align="left">Password:</h1>
-              </div>
-              <input type="text" class="form-control" name="signup-pass"></input>
-
-              <div class="w-container">
-                <h4 align="left">Retype Password:</h1>
-                </div>
-                <input type="password" class="form-control" name="signup-cpass"></input>
-
-
-                <div class="w-row">
-                  <a href="index.php" class="myButton">Back</a>
-                  <!--<div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a class="button" href="/html/main.html">Submit</a>-->
-                  <input class="button" type="submit" name="signup-submit" value="Submit">
-                </div>
-              </form>
-
+		  <div class="container indexFormPane" style="width:300px">
+		  	<div align="center">
+				<label style="font-size:17px;color:black;">
+					Enter information to signup.
+				</label>
+			</div>
+          <form id="signup-form" role="form" name="email-form" method="POST" action="connect-signup.php">
+		<div align="center">
+          <input type="text" class="form-control" name="signup-name" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" placeholder="Full Name"></input>
+		</div>
+        <div align="center">
+          <input type="text" class="form-control" name="signup-email" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" placeholder="Email"></input>
+		</div>
+		<br>
+        <div align="center">
+		  <input type="text" class="form-control" name="signup-user" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" placeholder="Username"></input>
+		</div>
+		<br>
+        <div align="center">
+          <input type="password" class="form-control" name="signup-pass" style="width:250px;margin-bottom:2%;height:50px;background-color:#FFF8DC;" placeholder="Password"></input>
+		</div>
+        <div align="center">
+          <input type="password" class="form-control" name="signup-cpass" style="width:250px;margin-bottom:4%;height:50px;background-color:#FFF8DC;" placeholder="Retype password"></input>
+        </div>
+        <div align="center">
+            <button style="color:black;font-size:18px;width:250px;height:50px;" class="btn-md btn-info green_sea_back" type="submit" name="signup-submit" value="Submit">
+             <span class="glyphicon glyphicon-log-in" style="color:white;"></span>
+             Submit
+            </button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
               <script src="https://code.jquery.com/jquery.js"></script>
               <!-- Include all compiled plugins (blelow), or include individual files as needed -->
               <script src="../public/js/bootstrap.min.js"></script>
